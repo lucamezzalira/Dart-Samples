@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VideoPlayer</title>
+    <link rel="stylesheet" type="text/css" href="videoplayer.css">
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
+    <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark.css">
+    <link rel="stylesheet" type="text/css" href="css/topcoat-mobile.css">
+  </head>
+  <body>
+    
+    <div class="centerClass">
+      <h1>VideoPlayer made with DartJS</h1>
+      <video id="video" width="640" height="420"/> 
+    </div>
+    
+    <div class="centerClass">
+      <a id="playBtn" class="light-button">Play</a>
+      <a id="resumeBtn" class="light-button">Restart</a>
+      <span id="currTime">00:00/00:00</span>
+      <span><input id="volume" type="range" class="dark-slider" value="100"/></span>
+    </div>
+
+    <script type="application/dart" src="videoplayer.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

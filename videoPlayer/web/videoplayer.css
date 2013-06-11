@@ -1,0 +1,17 @@
+:-webkit-full-screen #video {
+  width: 100%;
+  height: 100%;
+}
+
+.centerClass{
+
+  width:640px;
+  margin:0 auto;
+  
+}
+
+span{
+
+  padding-left:95px;  
+  
+}

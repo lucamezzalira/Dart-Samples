@@ -1,0 +1,6 @@
+name: imageGallery
+description: A sample web application
+dependencies:
+  browser: any
+dev_dependencies:
+  web_ui: any

@@ -1,0 +1,5 @@
+name: videoPlayer
+description: video player with Dart.js
+dependencies:
+  browser: any
+  js: any

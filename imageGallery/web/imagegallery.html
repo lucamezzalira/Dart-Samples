@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="imagegallery.css">
+  </head>
+  <body>
+    
+    <h1>Image Gallery</h1>
+    
+    <div id="imageCont" class="wrap">
+      <template iterate="data in results">
+        <div class="image">
+          <img id="img_{{data[0]}}" class="faded" src={{data[1]}} width="320" height="240" on-click="onClick($event)" on-mouse-out="onOut($event)" on-mouse-over="onOver($event)" on-load="fadeIn($event)"/>
+          <img id="zoom_{{data[0]}}" src="images/zoom.png" class="zoom"/>
+          <h2><span>{{data[2]}}</span></h2>
+         </div>
+      </template>
+    </div>
+    
+
+    <script type="application/dart" src="imagegallery.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
